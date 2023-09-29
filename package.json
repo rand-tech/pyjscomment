@@ -1,0 +1,30 @@
+{
+  "name": "pyjscomment",
+  "displayName": "pyjscomment",
+  "description": "Renders JS in Python (For Frida users)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "publisher": "david28",
+  "keywords": [ "frida", "javascript", "python", "pyjscomment" ],
+  "icon": "imgs/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rand-tech/pyjscomment.git"
+  },
+  "categories": [ "Programming Languages" ],
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./syntaxes/pyjsinjection.tmLanguage.json",
+        "scopeName": "source.js.embedded.python",
+        "injectTo": [ "source.python" ],
+        "embeddedLanguages": {
+          "source.js.embedded.python": "javascript",
+          "source.js": "javascript"
+        }
+      }
+    ]
+  }
+}

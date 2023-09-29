@@ -1,0 +1,17 @@
+{
+    "fileTypes": [ ],
+    "injectionSelector": "L:source.python",
+    "patterns": [
+        {
+            "begin": "\\s*(\"\"\"|''')\\s*js\\s+",
+            "end": "\\1",
+            "contentName": "source.js",
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
+        }
+    ],
+    "scopeName": "source.js.embedded.python"
+}
